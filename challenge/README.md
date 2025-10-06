@@ -214,15 +214,13 @@ Wie gut ist das Design technisch umgesetzt?
 
 #### 2. Aktuelle Challenge: Security by Design (25 %)
 
-Variabel je nach Challenge
+For **all** security levels:
+  - Quality and coverage of the threat modeling
+  - Quality of the security-related documentation and justification of design choices
 
-* Technische Umsetzung
-* Verifikation
-* ...
-
-—> @Niklas Höher für Kriterien Security by Design
-
-* wie gut wurden die Ansätze überprüft und getestet?
+For specific security levels:
+  - **Level 2 and up:** Practical side-channel analysis resistance of your implemented design, which is verified through practical measurements. We mainly use the number of required power traces until the correct long-term AES key can reliably be recovered as the target metric.
+  - **Level 3:** Quality of the implemented fault-injection countermeasures. Due to time constraints, we will not practically evaluate all submitted designs and instead evaluate the theoretical soundness of implemented countermeasures. Excellent designs might be evaluated separately in a lab setting to analyse actual effectiveness of the chosen protections.
 
 #### 3. Kreativität (15 %) (→Konkretisierung durch Dozent*innen/Professor*innen)
 
