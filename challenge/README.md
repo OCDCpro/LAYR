@@ -217,6 +217,7 @@ How well is the design technically implemented?
 #### 5.2. LAYR Challenge: Security by Design (25 %)
 
 For **all** security levels:
+  - Fulfilling higher levels give more points.
   - Quality and coverage of the threat modeling
   - Quality of the security-related documentation and justification of design choices
 
