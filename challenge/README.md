@@ -18,6 +18,8 @@ This “Guardian” chip must be able to securely perform some form of authentic
 * **Keycard reader:** This is your primary input. The chip will need to communicate with a provided contactless ISO/IEC 14443-A card reader via a Serial Peripheral Interface (SPI). Depending on the chosen Security-by-Design (more details later), different protocol messages need to be exchanged with the smart card.
 * **Switch interface:** This is your primary output. Once the chip has verified the access privileges of the card holder, it must set the corresponding output pin to a high logic level. This signal will be the electronic "key" that unlocks the door.
 
+![Tresor mit einem Chip](pics/Firefly_Ein%20Tresor%20mit%20einem%20Chip%20verbunden%20zum%20Schloss%2011140.jpg)
+
 Additionally, there is an **SPI-EEPROM** located on the development board, which will be used as non-volatile storage to hold a shared key between the lock and the keycard for authentication purposes (only applicable on higher security levels) and the list of allowed card IDs that should have access to the given door.
 
 Your design should consist of a digital logic circuit described in a Hardware Description Language (HDL). The ultimate goal is to create a small, fast, and secure chip.
@@ -30,13 +32,188 @@ Note: For more information on judging criteria, we refer to our separate competi
 
 ## 2. Tasks
 
-#### 2.1 Build a microchip
+### 2.1 Build a microchip
 
-#### 2.2 Battle of the teams
+#### Description of the chip
+
+Link to the specification of the chip (OCDCpro Github):
+
+https://github.com/OCDCpro/WP5/blob/main/2025_LAYR_Hardware_Kit/README.md
+
+#### Security-by-Design Levels
+
+In a scenario like this there are many possible attack vectors (e.g., side-channel analysis or fault injection attacks) to consider and a large number of possible countermeasures to increase the security of a given design. To guide your efforts in this area, we propose four different security levels that each include different common aspects of secure hardware design. You can choose any security level or, alternatively, start at some level and work your way up during the competition. There is no need to choose a fixed level at the start of the competition and you have full flexibility right until the end.
+
+**Note:** It might make sense to already think ahead before you start implementing a lower security level since you otherwise might need to adjust a larger amount of your code.
+
+**Security Levels:**
+
+* **Level 0:** Your chip includes no additional countermeasures, but you must ensure functional correctness of the simple OCDC Identification Protocol (see protocol specification below). Additionally, you should perform and document a basic form of threat modeling.
+* **Level 1:** Implementation of improved OCDC Authenticated Identification Protocol (see protocol specification below) instead of just reading out a static ID. You once again need to ensure functional correctness.
+* **Level 2** (intermediate): Protection against passive (power) side-channel attacks. You can freely chose what kinds of countermeasures (masking, hiding, ...) you want to implement to which degree. Please note that you should document your thoughts and argue why you chose which countermeasures and what the intended effect is.
+* **Level 3 (advanced):** Protection against active fault-injection attacks. Once again, you can freely choose which countermeasures (redundancy in time, redundancy in area, redundancy in information, ...) to implement, but you should document your choices.
+
+
+**Note for Level 1-3:** Due to high complexity of relevant countermeasures, secure key storage for the long-term shared AES key between the smart card and the terminal is not part of the competition and you can simply store the key in the external SPI-EEPROM. You don't have to include aspects of key storage and related insecurities in your threat modelling.
+
+#### Protocol Specification
+
+In this section, we provide a short overview of the two protocol variants and the relevant smart card applet command codes. For more information on the concrete implementation, we refer to the README of the GitHub repository containing the JavaCard applet source code (see https://github.com/OCDCpro/javacard-applet/tree/master).
+
+#### OCDC Identification Protocol:
+
+Simply return the card identifier upon receiving a corresponding request without any authentication or encryption.
+
+Command Summary:
+
+| Command     | CLA  | INS  | Description                              |
+|-------------|------|------|------------------------------------------|
+| `GET_ID`    | 0x80 | 0x12 | Returns the unencrypted 16-byte card ID. |    
+
+#### OCDC Authenticated Identification Protocol:
+
+Both parties have knowledge over a long-term shared AES-128 key.
+This key is used to perform mutual authentication and key agreement via a
+challenge-response protocol to derive an ephemeral AES-128 session key which
+is then used to encrypt the exchanged data, which mainly correspond to the
+ID of the card.
+
+- AES Mode: AES-128 ECB, no padding
+
+Command Summary:
+
+| Command     | CLA  | INS  | Description |
+|-------------|------|------|-------------|
+| `AUTH_INIT` | 0x80 | 0x10 | Card  generates random 8-byte challenge `rc`, computes `AES_psk(rc \|\| 00..00)` using the pre-shared key and returns the ciphertext.                                                               |
+| `AUTH`      | 0x80 | 0x11 | Terminal decrypts the ciphertext to recover `rc`, generates its own 8-byte challenge `rt`, and proves possesion of the key to the card by returning `AES_psk(rt \|\| rc)` using the pre-shared key. |
+| `GET_ID`    | 0x80 | 0x12 | Derive an ephemeral AES session key as `k_eph = AES_psk(rc \|\| rt)` and returns the 16-byte card ID encrypted using that key if authentication was successful. |
+
+
+#### Design Environment
+
+The design environment is set by the hosting institution? Do we even want to define this here?
+
+HM:
+
+* Baseline setup with librelane and IHP PDK
+* Chip toplevel, padring, scripts etc.
+* Optional: Croc/Hatch toplevel with user logic (RISC-V plus custom hardware)
+* IP Blocks: SPI controller
+
+#### Functional Verification
+
+As part of the competition, each team must verify the functional correctness of their "Guardian" chip implementation. To support this, we provide a simple HDL-based testbench that sets up the basic environment and enables SPI communication between the keycard and your hardware design.
+
+You are required to extend and enhance the provided testbench by implementing your own set of custom functional test cases. These tests should thoroughly verify the correctness of your hardware design and demonstrate that it behaves as expected under various operating conditions. Your custom test cases should focus on:
+
+* Correct handling of OCDC Identification and/or Authenticated Identification Protocol commands (e.g., GET_ID, AUTH);
+* SPI communication with the keycard and external EEPROM;
+* Validation of both successful and failed authentication attempts;
+* Triggering the unlock signal only after proper authorization;
+* Handling of edge cases and unexpected inputs (e.g., corrupted messages, timing issues).
+
+Aim to design test cases that cover both realistic scenarios and edge conditions to thoroughly verify your implementation and enhance its robustness and reliability. You are encouraged to think creatively about what to test and how. Your test suite should also reflect the specific design choices you made, particularly regarding your selected security level(s).
+
+To complete the functional verification task, each team must submit a comprehensive verification package demonstrating how the correctness of their "Guardian" chip was tested and validated. Your submission should include:
+
+* A complete **HDL testbench** extended with your own meaningful and well-structured test cases;
+* A concise **verification plan or documentation** describing the tested functionality, the rationale behind your test cases, and how your testbench ensures the functional correctness of your design – including both expected behavior and edge-case handling.
+
+This deliverable will help assess your ability to verify complex digital systems in a structured and thorough manner, going beyond basic functionality checks.
+
+### 2.2 Battle of the teams
+
+* All teams come together and battle each other. 
+* The built microchips will be integrated into the doorlock hardware kit.
+* The judges will determine the winning team(s).
 
 ## 3. Timeline and Milestones
 
+**Timeline:**
+
+![Timeline](pics/timeline_2.jpg)
+
+**Milestones:**
+
+![Milestones](pics/timeline.jpg)
+
 ## 4. Deliverables
 
+The following deliverables have to be submitted at the given Milestones (see table and timeline). 
+
++++TODO+++: How to submit the deliverables? Email okay?
+
+| Deliverable | Description | Milestone | Date | How to submit? |
+|-------------|-------------|-----------|------|----------------|
+| **TEAMLIST** | A list of the team members, the supervisor, and the institution. <br> * Names, Emails, Github handles | A | 10/25 | Email to LAYR team <br> (flexible but before 02/26) |
+| **GDS** | A tapeout-ready GDS of the microchip design: <br> * Published with an Open-Source License in a Git repository <br> * Including all sources to rebuild from scratch <br> * Submitted to IHP for production | B | 03/26 | * Git repo <br> * IHP Tapeout |
+| **DOCS** | Everything written <br> * Read the judging criteria list thoroughly to ensure you receive the maximum points.| B | 03/26 | Email to LAYR team |
+| **BATTLE** | The teams take their door locks to the battle event. <br> * Presentation <br> * Demonstration | D | Winter 26/27 <br> Exact date t.b.a. | * Email to LAYR team <br> * Team's appearance at the event |
+
 ## 5. Judging criteria
- 
+
+#### 1. Technische Qualität (35 %) 
+
+Wie gut ist das Design technisch umgesetzt?
+
+* **Funktionalität:** Erfüllt der Chip zuverlässig die Funktionen und Aufgaben?
+* **Verifikation:** Wurde das Design getestet und sind die Nachweise nachvollziehbar?
+* **Effizienz:** Wie gut schneidet das Design im Hinblick auf Energieverbrauch, Performance und Chipfläche ab?
+* **Robustheit:** Ist das Design stabil und erweiterbar auch über die konkrete Challenge hinaus?
+
+#### 2. Aktuelle Challenge: Security by Design (25 %)
+
+Variabel je nach Challenge
+
+* Technische Umsetzung
+* Verifikation
+* ...
+
+—> @Niklas Höher für Kriterien Security by Design
+
+* wie gut wurden die Ansätze überprüft und getestet?
+
+#### 3. Kreativität (15 %) (→Konkretisierung durch Dozent*innen/Professor*innen)
+
+Wie weit wird aus der Box heraus gedacht? Ggf. erweitern
+
+* Originalität, Kreativität, Innovation
+* Open-Source: Entdecken, nutzen, ändern, verbessern, diskutieren und veröffentlichen. 
+    Bsp: 
+    * 3D, Visualisierungen, Renderings, 
+    * Git Pull-requests und Issues, 
+    * neue Tools, 
+    * andere OS-Chips, Ressourcen, IPs
+* Aufgabenstellung: Handlung / Geschichte einbinden.
+
+#### 5. Praxisrelevanz und Evaluation (10%)
+
+**ToDO:** UMSCHREIBEN: Punkte 4 + 5 - Trennung in Meilensteine B und D
+
+Wie realistisch und praxisnah ist die Lösung? Was ist am Chip / an LAYR zu verbessern?
+
+* Erstellung des Chips: Auffinden und Benennen von Schwachstellen im Prozess.
+* Evaluationen:
+    * Eigener Chip: Praxistauglichkeit des gebauten Türschlosses, mögliche Verbesserungen, Nachhaltigkeit
+    * LAYR Wettbewerb: Aufgabe, Tools, T-t-T, Demonstrator, Betreuung,  ... 
+
+4. Präsentation und Dokumentation (15 %)
+
+Wie wird das Design vermittelt und präsentiert?
+
+* **Präsentation:** Verständlichkeit und Klarheit → Milestone D
+* **Technische Dokumentation:** Qualität und Nachvollziehbarkeit
+* **Demonstration:** Überzeugungskraft (Simulation, Live-Demonstration und Präsentation) → Milestone D
+
+Bewertung:
+
+* 100 Punkte insgesamt (nach Gewichtung s.o.)
+* Add on: Sonderpreis für beste Teamleistung?
+
+Bonus?
+
+**ToDO:** UMSCHREIBEN: Bonus für Feedback / Neue Aufgabe
+
+Vorschlag Thorsten, Steffen: 1-2 Bonuspunkte Feedback 
+
+    Neue LAYR Challenges: Was könnten zukünftige LAYR Aufgaben sein? (bonus?)
