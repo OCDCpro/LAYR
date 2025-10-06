@@ -261,7 +261,7 @@ How is the design conveyed and presented?
 
 #### 5.6. Bonus
 
-There can be bonuspoints given for special tasks beside the LAYR challenge. Topics could be:
+Bonus points can be distributed for special tasks and/or performances beside the main LAYR challenge. Bonus topics could be:
 
   * Evaluation and ideas for improvement of LAYR
   * Challenges proposals for future LAYR
