@@ -3,11 +3,11 @@
 #### Content:
 1. Storyline: The "Guardian" Assignment
 2. Tasks  
-    2.1. Design a microchip
+    2.1. Design a microchip  
     2.2. Security by design  
     2.3. Verification  
-    2.4. Tapeout
-    2.5. Battle of the teams
+    2.4. Tapeout  
+    2.5. Battle of the teams  
 3. Timeline and Milestones
 4. Deliverables
 5. Judging criteria
