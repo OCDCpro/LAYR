@@ -3,7 +3,8 @@
 #### Content:
 1. Storyline: The "Guardian" Assignment
 2. Tasks  
-    2.1. Build a microchip  
+    2.1. Design a microchip  
+    2.2. Tapeout at IHP
     2.2. Battle of the teams
 3. Timeline and Milestones
 4. Deliverables
@@ -30,11 +31,11 @@ All teams share the same design environment, templates and test benches to start
 
 ## 2. Tasks
 
-### 2.1 Build a microchip
+### 2.1. Design a microchip
 
 #### Description
 
-Microchip for the LAYR. To be inserted into the HW-Kit.
+Microchip for the doorlock. 
 
 #### Functionality
 
@@ -51,7 +52,7 @@ Microchip for the LAYR. To be inserted into the HW-Kit.
 ![QFN2 pinout v0.2 2025-09-03](pics/QFN_24_pins_v0.2_250903.png)
 
 **Padframe:**
-To be defined.
+To be defined. Repo available?
 
 #### Pins
 | Name  | Function | IO | Description |
@@ -98,14 +99,6 @@ To be defined.
   * Pin high opens the door
 * Status Indicators (LEDs):
   * Pin high lights the LED
-
-#### Protocols
-
-* OCDCpro Javacard Access Control Protocol (by Niklas Höher RUB / nhoeher) 
-
-#### Example Schematics:
-
-* HW-Kit LAYR (HSRM)
  
 #### Security-by-Design Levels
 
@@ -155,18 +148,6 @@ Command Summary:
 | `AUTH`      | 0x80 | 0x11 | Terminal decrypts the ciphertext to recover `rc`, generates its own 8-byte challenge `rt`, and proves possesion of the key to the card by returning `AES_psk(rt \|\| rc)` using the pre-shared key. |
 | `GET_ID`    | 0x80 | 0x12 | Derive an ephemeral AES session key as `k_eph = AES_psk(rc \|\| rt)` and returns the 16-byte card ID encrypted using that key if authentication was successful. |
 
-
-#### Design Environment
-
-The design environment is set by the hosting institution? Do we even want to define this here?
-
-HM:
-
-* Baseline setup with librelane and IHP PDK
-* Chip toplevel, padring, scripts etc.
-* Optional: Croc/Hatch toplevel with user logic (RISC-V plus custom hardware)
-* IP Blocks: SPI controller
-
 #### Functional Verification
 
 As part of the competition, each team must verify the functional correctness of their "Guardian" chip implementation. To support this, we provide a simple HDL-based testbench that sets up the basic environment and enables SPI communication between the keycard and your hardware design.
@@ -188,7 +169,11 @@ To complete the functional verification task, each team must submit a comprehens
 
 This deliverable will help assess your ability to verify complex digital systems in a structured and thorough manner, going beyond basic functionality checks.
 
-### 2.2 Battle of the teams
+### 2.3. Tapeout at IHP
+
+To be written (by IHP?)
+
+### 2.2. Battle of the teams
 
 * All teams come together and battle each other. 
 * The built microchips will be integrated into the doorlock hardware kit.
@@ -275,4 +260,4 @@ Bonus?
 
 Vorschlag Thorsten, Steffen: 1-2 Bonuspunkte Feedback 
 
-    Neue LAYR Challenges: Was könnten zukünftige LAYR Aufgaben sein? (bonus?)
+Neue LAYR Challenges: Was könnten zukünftige LAYR Aufgaben sein? (bonus?)
