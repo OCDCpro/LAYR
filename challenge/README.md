@@ -183,7 +183,7 @@ To be written (by IHP?)
 ### 2.5. Battle of the teams
 
 * All teams come together and battle each other. 
-* The built microchips will be integrated into the doorlock hardware kit.
+* Each team has the chance to present and demonstrate their works.
 * The judges will determine the winning team(s).
 
 ## 3. Timeline and Milestones
