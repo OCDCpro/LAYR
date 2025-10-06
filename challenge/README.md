@@ -22,7 +22,6 @@ This “Guardian” chip must be able to securely perform some form of authentic
 * **Switch interface:** This is your primary output. Once the chip has verified the access privileges of the card holder, it must set the corresponding output pin to a high logic level. This signal will be the electronic "key" that unlocks the door.
 
 ![Tresor mit einem Chip](pics/Firefly_Ein%20Tresor%20mit%20einem%20Chip%20verbunden%20zum%20Schloss%2011140.jpg)
-![Beschreibung des Bildes](bild.png)
 *CC0 – Public Domain, frei verwendbar*
 
 Additionally, there is an **SPI-EEPROM** located on the development board, which will be used as non-volatile storage to hold a shared key between the lock and the keycard for authentication purposes (only applicable on higher security levels) and the list of allowed card IDs that should have access to the given door.
