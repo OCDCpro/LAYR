@@ -203,16 +203,16 @@ The following deliverables have to be submitted at the given Milestones (see tab
 
 ## 5. Judging criteria
 
-#### 1. Technische Qualität (35 %) 
+#### 5.1. Technical quality (35 %)
 
-Wie gut ist das Design technisch umgesetzt?
+How well is the design technically implemented?
 
-* **Funktionalität:** Erfüllt der Chip zuverlässig die Funktionen und Aufgaben?
-* **Verifikation:** Wurde das Design getestet und sind die Nachweise nachvollziehbar?
-* **Effizienz:** Wie gut schneidet das Design im Hinblick auf Energieverbrauch, Performance und Chipfläche ab?
-* **Robustheit:** Ist das Design stabil und erweiterbar auch über die konkrete Challenge hinaus?
+* **Functionality:** Does the chip reliably fulfill the functions and tasks?  
+* **Verification:** Has the design been tested and are the evidence understandable?
+* **Efficiency:** How well does the design do with regard to power, performance and area (ppa)?
+* **Robustness:** Is the design stable and expandable beyond the specific challenge?
 
-#### 2. Aktuelle Challenge: Security by Design (25 %)
+#### 2. LAYR Challenge: Security by Design (25 %)
 
 For **all** security levels:
   - Quality and coverage of the threat modeling
@@ -222,18 +222,19 @@ For specific security levels:
   - **Level 2 and up:** Practical side-channel analysis resistance of your implemented design, which is verified through practical measurements. We mainly use the number of required power traces until the correct long-term AES key can reliably be recovered as the target metric.
   - **Level 3:** Quality of the implemented fault-injection countermeasures. Due to time constraints, we will not practically evaluate all submitted designs and instead evaluate the theoretical soundness of implemented countermeasures. Excellent designs might be evaluated separately in a lab setting to analyse actual effectiveness of the chosen protections.
 
-#### 3. Kreativität (15 %) (→Konkretisierung durch Dozent*innen/Professor*innen)
+#### 5.3. Creativity (15 %) 
 
-Wie weit wird aus der Box heraus gedacht? Ggf. erweitern
+Thinking out of the box?
 
-* Originalität, Kreativität, Innovation
-* Open-Source: Entdecken, nutzen, ändern, verbessern, diskutieren und veröffentlichen. 
-    Bsp: 
-    * 3D, Visualisierungen, Renderings, 
-    * Git Pull-requests und Issues, 
-    * neue Tools, 
-    * andere OS-Chips, Ressourcen, IPs
-* Aufgabenstellung: Handlung / Geschichte einbinden.
+* Originality, innovation
+* Creative usage of resources
+* Open source: Discover, use, change, improve, discuss and publish. 
+  For example: 
+  * 3D, visualizations, renderings, 
+  * Git pull request and issues, 
+  * New tools, 
+  * other OS chips, resources, IPS
+
 
 #### 5. Praxisrelevanz und Evaluation (10%)
 
