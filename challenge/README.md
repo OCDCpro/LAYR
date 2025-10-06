@@ -32,12 +32,81 @@ All teams share the same design environment, templates and test benches to start
 
 ### 2.1 Build a microchip
 
-#### Description of the chip
+#### Description
 
-Link to the specification of the chip (OCDCpro Github):
+Microchip for the LAYR. To be inserted into the HW-Kit.
 
-https://github.com/OCDCpro/WP5/blob/main/2025_LAYR_Hardware_Kit/README.md
+#### Functionality
 
+* Doorlock
+* Security by design
+* Verification 
+
+#### Packaging
+
+**Package name**
+  * **QFN-24**  
+
+**Pinout:**
+![QFN2 pinout v0.2 2025-09-03](pics/QFN_24_pins_v0.2_250903.png)
+
+**Padframe:**
+To be defined.
+
+#### Pins
+| Name  | Function | IO | Description |
+|:----  | :----     | :----  | :----  |
+| Pin1  | VCC       | Input  |   |   
+| Pin2  | GND       | Input  |   |
+| Pin3  | CLK       | Input  |   |
+| Pin4  | Reset     | Input  |   |
+| Pin5  | SPI SCLK  | Output |   |
+| Pin6  | SPI MISO  | Input  |   |
+| Pin7  | SPI MOSI  | Output |   |
+| Pin8  | SPI CS1   | Output |   |
+| Pin9  | SPI CS2   | Output |   |
+| Pin10 | SPI CS3   | Output |   |
+| Pin11 | SPI CS4   | Output |   |
+| Pin12 | Doorlock  | Output |   |
+| Pin13 | Status 1  | Output |   |
+| Pin14 | Status 2  | Output |   |
+| Pin15 | Status 3  | Output |   |
+| Pin16 | UART RX   | Input  |   |
+| Pin17 | UART TX   | Output |   |
+| Pin18 | UART CLK  | Input  |   |
+
+#### Clock / Reset
+
+* Clockspeed: XXX MHz. 
+* Reset is not inverted.
+
+#### External components
+
+* Memory Chip for Key Storage:
+  * SPI Memory 
+* NFC Reader:
+  * RC522
+* Doorlock (electronic-mechanical, one output pin)
+* Status Indicators (3 x LEDs on output pins)
+
+#### Communication Interfaces
+
+* SPI:
+  * NFC Reader RC522
+  * Memory Chip for Key Storage   
+* Doorlock:
+  * Pin high opens the door
+* Status Indicators (LEDs):
+  * Pin high lights the LED
+
+#### Protocols
+
+* OCDCpro Javacard Access Control Protocol (by Niklas Höher RUB / nhoeher) 
+
+#### Example Schematics:
+
+* HW-Kit LAYR (HSRM)
+ 
 #### Security-by-Design Levels
 
 In a scenario like this there are many possible attack vectors (e.g., side-channel analysis or fault injection attacks) to consider and a large number of possible countermeasures to increase the security of a given design. To guide your efforts in this area, we propose four different security levels that each include different common aspects of secure hardware design. You can choose any security level or, alternatively, start at some level and work your way up during the competition. There is no need to choose a fixed level at the start of the competition and you have full flexibility right until the end.
