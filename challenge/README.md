@@ -212,7 +212,7 @@ How well is the design technically implemented?
 * **Efficiency:** How well does the design do with regard to power, performance and area (ppa)?
 * **Robustness:** Is the design stable and expandable beyond the specific challenge?
 
-#### 2. LAYR Challenge: Security by Design (25 %)
+#### 5.2. LAYR Challenge: Security by Design (25 %)
 
 For **all** security levels:
   - Quality and coverage of the threat modeling
@@ -235,10 +235,19 @@ Thinking out of the box?
   * New tools, 
   * other OS chips, resources, IPS
 
+#### 5.4. Präsentation und Dokumentation (15 %)
 
-#### 5. Praxisrelevanz und Evaluation (10%)
+**ToDO:** UMSCHREIBEN: Punkte 5.4. + 5.5. - Trennung in Meilensteine B und D
 
-**ToDO:** UMSCHREIBEN: Punkte 4 + 5 - Trennung in Meilensteine B und D
+Wie wird das Design vermittelt und präsentiert?
+
+* **Präsentation:** Verständlichkeit und Klarheit → Milestone D
+* **Technische Dokumentation:** Qualität und Nachvollziehbarkeit
+* **Demonstration:** Überzeugungskraft (Simulation, Live-Demonstration und Präsentation) → Milestone D
+
+#### 5.5. Praxisrelevanz und Evaluation (10%)
+
+**ToDO:** UMSCHREIBEN: Punkte 5.4. + 5.5. - Trennung in Meilensteine B und D
 
 Wie realistisch und praxisnah ist die Lösung? Was ist am Chip / an LAYR zu verbessern?
 
@@ -247,13 +256,6 @@ Wie realistisch und praxisnah ist die Lösung? Was ist am Chip / an LAYR zu verb
     * Eigener Chip: Praxistauglichkeit des gebauten Türschlosses, mögliche Verbesserungen, Nachhaltigkeit
     * LAYR Wettbewerb: Aufgabe, Tools, T-t-T, Demonstrator, Betreuung,  ... 
 
-4. Präsentation und Dokumentation (15 %)
-
-Wie wird das Design vermittelt und präsentiert?
-
-* **Präsentation:** Verständlichkeit und Klarheit → Milestone D
-* **Technische Dokumentation:** Qualität und Nachvollziehbarkeit
-* **Demonstration:** Überzeugungskraft (Simulation, Live-Demonstration und Präsentation) → Milestone D
 
 Bewertung:
 
