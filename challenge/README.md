@@ -3,8 +3,8 @@
 #### Content:
 1. Storyline: The "Guardian" Assignment
 2. Tasks
-    2.1 Build a microchip
-    2.2 Battle of the teams
+2.1 Build a microchip
+2.2 Battle of the teams
 3. Timeline and Milestones
 4. Deliverables
 5. Judging criteria
