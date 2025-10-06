@@ -3,9 +3,11 @@
 #### Content:
 1. Storyline: The "Guardian" Assignment
 2. Tasks  
-    2.1. Design a microchip  
-    2.2. Tapeout at IHP
-    2.2. Battle of the teams
+    2.1. Design a microchip
+    2.2. Security by design  
+    2.3. Verification  
+    2.4. Tapeout at IHP
+    2.5. Battle of the teams
 3. Timeline and Milestones
 4. Deliverables
 5. Judging criteria
@@ -100,7 +102,7 @@ To be defined. Repo available?
 * Status Indicators (LEDs):
   * Pin high lights the LED
  
-#### Security-by-Design Levels
+### 2.2. Security-by-Design Levels
 
 In a scenario like this there are many possible attack vectors (e.g., side-channel analysis or fault injection attacks) to consider and a large number of possible countermeasures to increase the security of a given design. To guide your efforts in this area, we propose four different security levels that each include different common aspects of secure hardware design. You can choose any security level or, alternatively, start at some level and work your way up during the competition. There is no need to choose a fixed level at the start of the competition and you have full flexibility right until the end.
 
@@ -148,7 +150,7 @@ Command Summary:
 | `AUTH`      | 0x80 | 0x11 | Terminal decrypts the ciphertext to recover `rc`, generates its own 8-byte challenge `rt`, and proves possesion of the key to the card by returning `AES_psk(rt \|\| rc)` using the pre-shared key. |
 | `GET_ID`    | 0x80 | 0x12 | Derive an ephemeral AES session key as `k_eph = AES_psk(rc \|\| rt)` and returns the 16-byte card ID encrypted using that key if authentication was successful. |
 
-#### Functional Verification
+### 2.3. Functional Verification
 
 As part of the competition, each team must verify the functional correctness of their "Guardian" chip implementation. To support this, we provide a simple HDL-based testbench that sets up the basic environment and enables SPI communication between the keycard and your hardware design.
 
@@ -169,11 +171,11 @@ To complete the functional verification task, each team must submit a comprehens
 
 This deliverable will help assess your ability to verify complex digital systems in a structured and thorough manner, going beyond basic functionality checks.
 
-### 2.3. Tapeout at IHP
+### 2.4. Tapeout at IHP
 
 To be written (by IHP?)
 
-### 2.2. Battle of the teams
+### 2.5. Battle of the teams
 
 * All teams come together and battle each other. 
 * The built microchips will be integrated into the doorlock hardware kit.
