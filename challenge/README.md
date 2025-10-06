@@ -6,7 +6,7 @@
     2.1. Design a microchip
     2.2. Security by design  
     2.3. Verification  
-    2.4. Tapeout at IHP
+    2.4. Tapeout
     2.5. Battle of the teams
 3. Timeline and Milestones
 4. Deliverables
@@ -171,9 +171,14 @@ To complete the functional verification task, each team must submit a comprehens
 
 This deliverable will help assess your ability to verify complex digital systems in a structured and thorough manner, going beyond basic functionality checks.
 
-### 2.4. Tapeout at IHP
+### 2.4. Tapeout
 
 To be written (by IHP?)
+* GDS submission 
+* DRC clean 
+* Padframe
+* Deadlines
+* ....
 
 ### 2.5. Battle of the teams
 
