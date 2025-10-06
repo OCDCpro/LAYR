@@ -28,8 +28,6 @@ Your design should consist of a digital logic circuit described in a Hardware De
 
 All teams share the same design environment, templates and test benches to start your work on. As the security level is not fixed yet, your team can freely choose from four different security levels to target.
 
-Note: For more information on judging criteria, we refer to our separate competition guidelines.
-
 ## 2. Tasks
 
 ### 2.1 Build a microchip
@@ -129,19 +127,11 @@ This deliverable will help assess your ability to verify complex digital systems
 
 ## 3. Timeline and Milestones
 
-**Timeline:**
-
-![Timeline](pics/timeline_2.jpg)
-
-**Milestones:**
-
-![Milestones](pics/timeline.jpg)
+![Timeline](pics/timeline.png)
 
 ## 4. Deliverables
 
 The following deliverables have to be submitted at the given Milestones (see table and timeline). 
-
-+++TODO+++: How to submit the deliverables? Email okay?
 
 | Deliverable | Description | Milestone | Date | How to submit? |
 |-------------|-------------|-----------|------|----------------|
