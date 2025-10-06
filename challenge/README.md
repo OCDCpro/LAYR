@@ -203,6 +203,8 @@ The following deliverables have to be submitted at the given Milestones (see tab
 
 ## 5. Judging criteria
 
+There will be a total of 100 points distributed according to the percentual weight of the criteria.
+
 #### 5.1. Technical quality (35 %)
 
 How well is the design technically implemented?
@@ -235,37 +237,31 @@ Thinking out of the box?
   * New tools, 
   * other OS chips, resources, IPS
 
-#### 5.4. Präsentation und Dokumentation (15 %)
+#### 5.4. Documentation, practical relevance and evaluation (10%)
 
-**ToDO:** UMSCHREIBEN: Punkte 5.4. + 5.5. - Trennung in Meilensteine B und D
+* **Technical documentation:** Quality and understandability
 
-Wie wird das Design vermittelt und präsentiert?
+How realistic and practical is the development, the solution and the chip?
 
-* **Präsentation:** Verständlichkeit und Klarheit → Milestone D
-* **Technische Dokumentation:** Qualität und Nachvollziehbarkeit
-* **Demonstration:** Überzeugungskraft (Simulation, Live-Demonstration und Präsentation) → Milestone D
+* Evaluation of the created chip design:  
+  * Practical suitability of the built door lock 
+  * possible (future) improvements 
+  * sustainability
 
-#### 5.5. Praxisrelevanz und Evaluation (10%)
+* Development process:  
+  * Find and name vulnerabilities
 
-**ToDO:** UMSCHREIBEN: Punkte 5.4. + 5.5. - Trennung in Meilensteine B und D
+#### 5.5. Presentation and demonstration (15 %)
 
-Wie realistisch und praxisnah ist die Lösung? Was ist am Chip / an LAYR zu verbessern?
+How is the design conveyed and presented?
 
-* Erstellung des Chips: Auffinden und Benennen von Schwachstellen im Prozess.
-* Evaluationen:
-    * Eigener Chip: Praxistauglichkeit des gebauten Türschlosses, mögliche Verbesserungen, Nachhaltigkeit
-    * LAYR Wettbewerb: Aufgabe, Tools, T-t-T, Demonstrator, Betreuung,  ... 
+* **Presentation:** Understandability and clarity
+* **Demonstration:** Persuasiveness (simulation, live demonstration and presentation)
 
 
-Bewertung:
+#### 5.6. Bonus
 
-* 100 Punkte insgesamt (nach Gewichtung s.o.)
-* Add on: Sonderpreis für beste Teamleistung?
+There can be bonuspoints given for special tasks beside the LAYR challenge. Topics could be:
 
-Bonus?
-
-**ToDO:** UMSCHREIBEN: Bonus für Feedback / Neue Aufgabe
-
-Vorschlag Thorsten, Steffen: 1-2 Bonuspunkte Feedback 
-
-Neue LAYR Challenges: Was könnten zukünftige LAYR Aufgaben sein? (bonus?)
+  * Evaluation and ideas for improvement of LAYR
+  * Challenges proposals for future LAYR
