@@ -174,12 +174,7 @@ This deliverable will help assess your ability to verify complex digital systems
 
 ### 2.4. Tapeout
 
-To be written (by IHP?)
-* GDS submission 
-* DRC clean 
-* Padframe
-* Deadlines
-* ....
+The tapeout phase represents the final stage of the design process in the challenge, where participants prepare their layouts for fabrication. Participants are required to submit their finalized GDS files once their designs have passed physical verification and are confirmed to be DRC clean. The provided padframe should be used as part of the final layout submission. Deadlines for tapeout and GDS submission will be communicated during the challenge. Detailed submission procedures and file requirements will be provided later in the challenge timeline.
 
 ### 2.5. Battle of the teams
 
