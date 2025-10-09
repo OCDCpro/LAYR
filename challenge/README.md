@@ -52,9 +52,11 @@ Microchip for the doorlock.
   * **QFN-24**  
 
 **Pinout:**
+
 ![QFN2 pinout v0.2 2025-09-03](pics/QFN_24_pins_v1.0_251009.png)
 
 **Padframe:**
+
 Same as OCDCpro Testchip.
 [OCDCpro Test chip](https://github.com/IHP-GmbH/TO_Sep2025/tree/main/ocdcpro_poc)
 
