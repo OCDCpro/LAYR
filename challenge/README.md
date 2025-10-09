@@ -97,8 +97,10 @@ Same as OCDCpro Testchip.
 
 * Memory Chip for Key Storage:
   * SPI Memory 
+  * AT25010  
 * NFC Reader:
-  * RC522
+  * [NXP NFRC522](https://www.nxp.com/docs/en/data-sheet/MFRC522.pdf)
+
 * Doorlock (electronic-mechanical, one output pin)
 * Status Indicators (3 x LEDs on output pins)
 
