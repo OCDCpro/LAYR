@@ -55,33 +55,40 @@ Microchip for the doorlock.
 ![QFN2 pinout v0.2 2025-09-03](pics/QFN_24_pins_v0.2_250903.png)
 
 **Padframe:**
-To be defined. Repo available?
+Same as OCDCpro Testchip.
+[OCDCpro Test chip](https://github.com/IHP-GmbH/TO_Sep2025/tree/main/ocdcpro_poc)
 
 #### Pins
 | Name  | Function | IO | Description |
 |:----  | :----     | :----  | :----  |
-| Pin1  | VCC       | Input  |   |   
-| Pin2  | GND       | Input  |   |
-| Pin3  | CLK       | Input  |   |
-| Pin4  | Reset     | Input  |   |
-| Pin5  | SPI SCLK  | Output |   |
-| Pin6  | SPI MISO  | Input  |   |
-| Pin7  | SPI MOSI  | Output |   |
-| Pin8  | SPI CS1   | Output |   |
-| Pin9  | SPI CS2   | Output |   |
-| Pin10 | SPI CS3   | Output |   |
-| Pin11 | SPI CS4   | Output |   |
-| Pin12 | Doorlock  | Output |   |
-| Pin13 | Status 1  | Output |   |
-| Pin14 | Status 2  | Output |   |
-| Pin15 | Status 3  | Output |   |
-| Pin16 | UART RX   | Input  |   |
-| Pin17 | UART TX   | Output |   |
-| Pin18 | UART CLK  | Input  |   |
+| Pin1  | VCC       | Input  | Supply voltage |   
+| Pin2  | GND       | Input  | Ground |
+| Pin3  | CLK       | Input  | External clock input |
+| Pin4  | Reset     | Input  | Reset |
+| Pin5  | SPI SCLK  | Output | SPI Clock |
+| Pin6  | SPI MISO  | Input  | SPI Master In Slave Out |
+| Pin7  | SPI MOSI  | Output | SPI Master Out Slave In |
+| Pin8  | SPI CS1   | Output | SPI cable select 1 |
+| Pin9  | SPI CS2   | Output | SPI cable select 2 |
+| Pin10 | SPI CS3   | Output | SPI cable select 3 |
+| Pin11 | SPI CS4   | Output | SPI cable select 4 |
+| Pin12 | Doorlock  | Output | Doorlock output signal |
+| Pin13 | Status 1  | Output | Signaling a state or status 1 |
+| Pin14 | Status 2  | Output | Signaling a state or status 2 |
+| Pin15 | Status 3  | Output | Signaling a state or status 3 |
+| Pin16 | UART RX   | Input  | UART receive |
+| Pin17 | UART TX   | Output | UART send |
+| Pin18 | UART CLK  | Input  | UART clock |
+| Pin19 | I/O user defined  | I/O user defined  | I/O user defined |
+| Pin21 | I/O user defined  | I/O user defined  | I/O user defined |
+| Pin22 | I/O user defined  | I/O user defined  | I/O user defined |
+| Pin23 | I/O user defined  | I/O user defined  | I/O user defined |
+| Pin24 | I/O user defined  | I/O user defined  | I/O user defined |
+| Pin25 | I/O user defined  | I/O user defined  | I/O user defined |
 
 #### Clock / Reset
 
-* Clockspeed: XXX MHz. 
+* Clockspeed: User defined. Must be high enough to run the features.
 * Reset is not inverted.
 
 #### External components
