@@ -14,23 +14,23 @@
 
 ## 1. Storyline: The "Guardian" Assignment
 
-You and your entire team were recently hired to design the core of a next-generation security system guarding a classified research vault. The vault has a physical door lock that is supposed to be opened by traditional keycards. Your task is to design this digital system. Because you have leftover budget for manufacturing your custom chip, you start “Project Guardian”, which is a great opportunity to deploy a custom chip.
+You and your entire team were recently hired to design the core of a next-generation security system for a classified research vault. The vault has a physical door lock that is supposed to be opened using by traditional keycards. Your task is to design this digital system. As you have budget leftover for manufacturing your custom chip, you start “Project Guardian”, which is a great opportunity to deploy a custom chip.
 
 This “Guardian” chip must be able to securely perform some form of authentication protocol (more details later) with the keycard and, if the card succeeds and returns an authorized ID, activate the door's locking mechanism. Your chip will interface with the outside world through two critical communication channels:
 
 * **Keycard reader:** This is your primary input. The chip will need to communicate with a provided contactless ISO/IEC 14443-A card reader via a Serial Peripheral Interface (SPI). Depending on the chosen Security-by-Design (more details later), different protocol messages need to be exchanged with the smart card.
-* **Switch interface:** This is your primary output. Once the chip has verified the access privileges of the card holder, it must set the corresponding output pin to a high logic level. This signal will be the electronic "key" that unlocks the door.
+* **Switch interface:** This is your primary output. Once the chip has verified the card holder's access privileges, it must set the corresponding output pin to a high logic level. This signal will be the electronic "key" that unlocks the door.
 
 ![Tresor mit einem Chip](pics/Firefly_Ein%20Tresor%20mit%20einem%20Chip%20verbunden%20zum%20Schloss%2011140.jpg)
 *CC0 – Public Domain, frei verwendbar*
 
-Additionally, there is an **SPI-EEPROM** located on the development board, which will be used as non-volatile storage to hold a shared key between the lock and the keycard for authentication purposes (only applicable on higher security levels) and the list of allowed card IDs that should have access to the given door.
+Additionally, an **SPI-EEPROM** is located on the development board. This will be used for an non-volatile storage, holding a shared key between the lock and the keycard for authentication purposes (only applicable at higher security levels), as well as a list of permitted card IDs for access the given door.
 
 Your design should consist of a digital logic circuit described in a Hardware Description Language (HDL). The ultimate goal is to create a small, fast, and secure chip.
 
-**Competition!** Today you found out that not only your team will work for this chip, but that many more teams across your entire enterprise were tasked to complete this crucial project. You are all competing in a challenge!
+**Competition!** Today, you found out that your team is not the only team working on this chip, but that many more teams across your entire enterprise have been tasked with completing this crucial project. You are all competing in a challenge!
 
-All teams share the same design environment, templates and test benches to start your work on. As the security level is not fixed yet, your team can freely choose from four different security levels to target.
+All teams share the same design environment, templates and test benches with which to begin work. As the security level has not been fixed yet, your team can freely choose from four different security levels to target.
 
 ## 2. Tasks
 
@@ -116,7 +116,7 @@ Same as OCDCpro Testchip.
  
 ### 2.2. Security-by-Design Levels
 
-In a scenario like this there are many possible attack vectors (e.g., side-channel analysis or fault injection attacks) to consider and a large number of possible countermeasures to increase the security of a given design. To guide your efforts in this area, we propose four different security levels that each include different common aspects of secure hardware design. You can choose any security level or, alternatively, start at some level and work your way up during the competition. There is no need to choose a fixed level at the start of the competition and you have full flexibility right until the end.
+In a scenario like this there are many possible attack vectors (e.g., side-channel analysis or fault injection attacks) to consider, such as side-channel analysis or fault injection attacks, and a large number of possible countermeasures to increase the security of a given design. To guide your efforts in this area, we have created four different security levels, each of which includes common aspects of secure hardware design. You can select any security level or, start at level one and progress during the competition. You do not need to choose a fixed level at the start of the competition and you have full flexibility right until the end.
 
 **Note:** It might make sense to already think ahead before you start implementing a lower security level since you otherwise might need to adjust a larger amount of your code.
 
@@ -164,9 +164,9 @@ Command Summary:
 
 ### 2.3. Functional Verification
 
-As part of the competition, each team must verify the functional correctness of their "Guardian" chip implementation. To support this, we provide a simple HDL-based testbench that sets up the basic environment and enables SPI communication between the keycard and your hardware design.
+As part of the competition, each team must verify that their 'Guardian' chip implementation is functionally correct. To support this, we provide a simple HDL-based testbench that sets up the basic environment and enables serial periphal interface (SPI) communication between the keycard and your hardware design.
 
-You are required to extend and enhance the provided testbench by implementing your own set of custom functional test cases. These tests should thoroughly verify the correctness of your hardware design and demonstrate that it behaves as expected under various operating conditions. Your custom test cases should focus on:
+You must extend and enhance the provided testbench by implementing your own set of custom functional test cases. These tests should thoroughly verify the correctness of your hardware design and demonstrate that it behaves as expected under various operating conditions. Your custom test cases should focus on:
 
 * Correct handling of OCDC Identification and/or Authenticated Identification Protocol commands (e.g., GET_ID, AUTH);
 * SPI communication with the keycard and external EEPROM;
