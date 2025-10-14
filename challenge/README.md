@@ -174,14 +174,14 @@ You must extend and enhance the provided testbench by implementing your own set 
 * Triggering the unlock signal only after proper authorization;
 * Handling of edge cases and unexpected inputs (e.g., corrupted messages, timing issues).
 
-Aim to design test cases that cover both realistic scenarios and edge conditions to thoroughly verify your implementation and enhance its robustness and reliability. You are encouraged to think creatively about what to test and how. Your test suite should also reflect the specific design choices you made, particularly regarding your selected security level(s).
+Aim to design test cases that cover both realistic scenarios and edge conditions to thoroughly verify your implementation and enhance its robustness and reliability. You are encouraged to think creatively about what to test and how. Your test suite should also reflect your specific design choices, particularly with regard to the security level(s) you selected.
 
-To complete the functional verification task, each team must submit a comprehensive verification package demonstrating how the correctness of their "Guardian" chip was tested and validated. Your submission should include:
+To complete the functional verification task, each team must submit a comprehensive verification package demonstrating how they tested and validated the correctness of their "Guardian" chip. Your submission should include:
 
 * A complete **HDL testbench** extended with your own meaningful and well-structured test cases;
-* A concise **verification plan or documentation** describing the tested functionality, the rationale behind your test cases, and how your testbench ensures the functional correctness of your design – including both expected behavior and edge-case handling.
+* A concise **verification plan or documentation** describing the tested functionality, the rationale behind your test cases, and how your testbench ensures the functional correctness of your design, including both expected behavior and edge-case handling.
 
-This deliverable will help assess your ability to verify complex digital systems in a structured and thorough manner, going beyond basic functionality checks.
+This deliverable will help us to assess your ability to verify complex digital systems in a structured and thorough manner, that goes beyond basic functionality checks.
 
 ### 2.4. Tapeout
 
