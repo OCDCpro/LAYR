@@ -203,34 +203,34 @@ The following deliverables have to be submitted at the given Milestones (see tab
 
 | Deliverable | Description | Milestone | Date | How to submit? |
 |-------------|-------------|-----------|------|----------------|
-| **TEAMLIST** | A list of the team members, the supervisor, and the institution. <br> * Names, Emails, Github handles | A | 10/25 | Email to LAYR team <br> (flexible but before 02/26) |
-| **GDS** | A tapeout-ready GDS of the microchip design: <br> * Published with an Open-Source License in a Git repository <br> * Including all sources to rebuild from scratch <br> * Submitted to IHP for production | B | 03/26 | * Git repo <br> * IHP Tapeout |
+| **TEAMLIST** | A list of team members, supervisors and institution. <br> * Include Names, Emails and Github handles | A | 10/25 | Email to LAYR team <br> (flexible but before 02/26) |
+| **GDS** | A tapeout-ready GDS of the microchip design: <br> * Published with an open-source License in a Git repository <br> * including all sources to rebuild from scratch <br> * Submitted to IHP for production | B | 03/26 | * Git repo <br> * IHP Tapeout |
 | **DOCS** | Everything written <br> * Read the judging criteria list thoroughly to ensure you receive the maximum points.| B | 03/26 | Email to LAYR team |
-| **BATTLE** | The teams take their door locks to the battle event. <br> * Presentation <br> * Demonstration | D | Winter 26/27 <br> Exact date t.b.a. | * Email to LAYR team <br> * Team's appearance at the event |
+| **BATTLE** | The teams take their door locks to the battle event. <br> * Presentation <br> * Demonstration | D | Winter 26/27 <br> Exact date to be announced | * Email to LAYR team <br> * Team's appearance at the event |
 
 ## 5. Judging criteria
 
-There will be a total of 100 points distributed according to the percentual weight of the criteria.
+A total of 100 points will be distributed according to the percentage weighting of the criteria.
 
 #### 5.1. Technical quality (35 %)
 
 How well is the design technically implemented?
 
-* **Functionality:** Does the chip reliably fulfill the functions and tasks?  
-* **Verification:** Has the design been tested and are the evidence understandable?
-* **Efficiency:** How well does the design do with regard to power, performance and area (ppa)?
-* **Robustness:** Is the design stable and expandable beyond the specific challenge?
+* **Functionality:** Does the chip reliably perform its functions and tasks?  
+* **Verification:** Has the design been tested and is the evidence understandable?
+* **Efficiency:** How well does the design perform in terms of power, performance and area (PPA)?
+* **Robustness:** Is the design stable and scalable beyond the specific challenge?
 
 #### 5.2. LAYR Challenge: Security by Design (25 %)
 
 For **all** security levels:
-  - Fulfilling higher levels give more points.
-  - Quality and coverage of the threat modeling
-  - Quality of the security-related documentation and justification of design choices
+  - Fulfilling higher levels earns more points.
+  - The quality and coverage of the threat modelling.
+  - The quality of the security-related documentation and justification of design choices.
 
 For specific security levels:
-  - **Level 2 and up:** Practical side-channel analysis resistance of your implemented design, which is verified through practical measurements. We mainly use the number of required power traces until the correct long-term AES key can reliably be recovered as the target metric.
-  - **Level 3:** Quality of the implemented fault-injection countermeasures. Due to time constraints, we will not practically evaluate all submitted designs and instead evaluate the theoretical soundness of implemented countermeasures. Excellent designs might be evaluated separately in a lab setting to analyse actual effectiveness of the chosen protections.
+  - **Level 2 and above:** Practical resistance to side-channel analysis of your implemented design, which is verified through practical measurements. We mainly use the number of required power traces until the correct long-term AES key can be reliably recovered as the target metric.
+  - **Level 3:** Quality of the implemented fault-injection countermeasures. Due to time constraints, we will not evaluate all submitted designs in practice but will instead evaluate the theoretical soundness of the implemented countermeasures. Excellent designs may be evaluated separately in a laboratory setting to analyse the actual effectiveness of the chosen protections.
 
 #### 5.3. Creativity (15 %) 
 
@@ -269,7 +269,7 @@ How is the design conveyed and presented?
 
 #### 5.6. Bonus
 
-Bonus points can be distributed for special tasks and/or performances beside the main LAYR challenge. Bonus topics could be:
+Bonus points are awarded for special tasks and/or performances in addition to the main LAYR challenge. Examples of bonus topics could be:
 
   * Evaluation and ideas for improvement of LAYR
-  * Challenges proposals for future LAYR
+  * Proposals for future LAYR challenges 
