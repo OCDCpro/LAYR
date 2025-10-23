@@ -53,7 +53,7 @@ Microchip for the doorlock.
 
 **Pinout:**
 
-![QFN2 pinout v0.2 2025-09-03](pics/QFN_24_pins_v1.0_251009.png)
+![QFN2 pinout v2.0](pics/QFN_24_pins_v2.0_251023.png)
 
 **Padframe:**
 
@@ -63,30 +63,30 @@ Same as OCDCpro Testchip.
 #### Pins
 | Name  | Function | IO | Description |
 |:----  | :----     | :----  | :----  |
-| Pin1  | VCC       | Input  | Supply voltage |   
-| Pin2  | GND       | Input  | Ground |
-| Pin3  | CLK       | Input  | External clock input |
-| Pin4  | Reset     | Input  | Reset |
-| Pin5  | SPI SCLK  | Output | SPI Clock |
-| Pin6  | SPI MISO  | Input  | SPI Master In Slave Out |
-| Pin7  | SPI MOSI  | Output | SPI Master Out Slave In |
-| Pin8  | SPI CS1   | Output | SPI cable select 1 |
-| Pin9  | SPI CS2   | Output | SPI cable select 2 |
-| Pin10 | SPI CS3   | Output | SPI cable select 3 |
-| Pin11 | SPI CS4   | Output | SPI cable select 4 |
-| Pin12 | Doorlock  | Output | Doorlock output signal |
-| Pin13 | Status 1  | Output | Signaling a state or status 1 |
-| Pin14 | Status 2  | Output | Signaling a state or status 2 |
-| Pin15 | Status 3  | Output | Signaling a state or status 3 |
-| Pin16 | UART RX   | Input  | UART receive |
-| Pin17 | UART TX   | Output | UART send |
-| Pin18 | UART CLK  | Input  | UART clock |
-| Pin19 | I/O user defined  | I/O user defined  | I/O user defined |
-| Pin21 | I/O user defined  | I/O user defined  | I/O user defined |
-| Pin22 | I/O user defined  | I/O user defined  | I/O user defined |
-| Pin23 | I/O user defined  | I/O user defined  | I/O user defined |
-| Pin24 | I/O user defined  | I/O user defined  | I/O user defined |
-| Pin25 | I/O user defined  | I/O user defined  | I/O user defined |
+| Pin1  | rst       | Input  | Reset |   
+| Pin2  | sys_clk   | Input  | System clock |
+| Pin3  | uart_clk  | Input  | UART_clock |
+| Pin4  | user_io_0 | Output | I/O user defined |
+| Pin5  | uart_rx   | Input  | UART receive |
+| Pin6  | uart_tx   | Output | UART send |
+| Pin7  | user_io_1 | Output | I/O user defined |
+| Pin8  | user_io_2 | Output | I/O user defined |
+| Pin9  | user_io_3 | Output | I/O user defined |
+| Pin10 | user_io_4 | Output | I/O user defined |
+| Pin11 | Vdd       | Input  | Vdd |
+| Pin12 | Vss       | Input  | Vss |
+| Pin13 | cs_1      | Output | spi cable select 1 |
+| Pin14 | cs_2      | Output | spi cable select 2 |
+| Pin15 | spi_miso  | Input  | SPI Master In Slave Out |
+| Pin16 | spi_mosi  | Output | SPI Master Out Slave In |
+| Pin17 | spi_sclk  | Output | SPI Clock  |
+| Pin18 | Vss       | Input  | Vss |
+| Pin19 | Vdd       | Input  | Vdd |
+| Pin21 | status_unlock | Output  | Signaling a state or status 1 |
+| Pin22 | status_fault  | Output  | Signaling a state or status 2 |
+| Pin23 | status_busy   | Output  | Signaling a state or status 3 |
+| Pin24 | IO_Vss    | Input  | IO_Vss |
+| Pin25 | IO_Vdd    | Input  | IO_Vdd |
 
 #### Clock / Reset
 
