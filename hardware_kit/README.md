@@ -1,6 +1,7 @@
 # The LAYR hardware kit
 
 ##  Description
+The LAYR hardware kit will be handed out to all teams. Each team gets one hardware kit.
 
 ## Content in the kit
 
