@@ -1,3 +1,6 @@
+# <p style="text-align:right; margin:0;">
+  # <img src="https://github.com/user-attachments/assets/98f27bae-e238-4b50-bd76-c6b624b8f1aa" width="200"/>
+
 # LAYR 25/26: The Challenge
 
 #### Content:
