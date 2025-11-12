@@ -1,3 +1,5 @@
+![LAYR Logo](pics/LAYR_Logo.png)
+
 # The LAYR hardware kit
 
 ##  Description
@@ -11,21 +13,32 @@ The LAYR hardware kit will be handed out to all teams. Each team gets one hardwa
 * 1 x Keycard, Java, pre-programmed
 
 ### Power:
-* 1 x DC-DC stepup
+* 1 x DC-DC stepdown converter
 * 1 x Relais 12V
-* 1 x Powersupply board USB-C 
+* 1 x Powersupply board USB-C with step-up converter
 
 ### Actors and Sensors:
 * 1 x Doorlock 12V
-* 5 x LEDs + resistors
-* 2 x Pushbuttons
+* 5 x LEDs and resistors
+* 2 x Pushbuttons 
 
 ### Notes:
 - The complete box is a gift.
 - No return.
 - Do want you want with it.
 
-## Pre-programmed data on the JavaCards
+## Content pictures and descriptions
+
+### NFC Reader with RC522 Chip and SPI
+![RC522 NFC Reader](pics/NCF_RC522.jpg)
+
+### EEPROM Memory AT25010B on Pinheader board, SPI
+![EEPROM AT25010B](pics/EEPROM_AT25010B.jpg)
+
+### Keycard (Javacard), pre-programmed
+![Javacard](pics/NFC_CARD.jpg)
+
+#### Pre-programmed data on the JavaCards
 All keycards have been programmed with a unique AES-128 key and 128-bit ID. You can find the data that
 corresponds to your card in the table below. All values are in hex.
 
@@ -39,4 +52,19 @@ corresponds to your card in the table below. All values are in hex.
 | F          | `3eb969973d3cce4717763ebf115ff496` | `191617ccffbfbe1c2cc0f48bd1f04fa5` |
 | G          | `2eb5df6306afab96cdd8cf88a158bf62` | `a91657d9d97f557bbdc062db6340cc90` |
 | H          | `a157ef30050522bef1df789fafb94955` | `c88d1dd2085fb8b40efb83cf2f6c6c6f` |
+
+### DC-DC Step-down Converter
+![Stepdown Converter](pics/STEP_DOWN_DC_DC.jpg)
+
+### Relais 12V
+![Relais 12V](pics/RELAIS.jpg)
+
+### USB-C Powersupply board with step-up converter
+![USB-C Powersupply board](pics/USBC_PWR.jpg)
+
+### Doorlock 12V
+![Doorlock 12V](pics/LOCK_12V.jpg)
+
+### LEDs, Buttons and Resistors
+![LEDs](pics/LED_BUTTONS.jpg)
 
