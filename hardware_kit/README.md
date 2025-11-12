@@ -1,6 +1,6 @@
 ![LAYR Logo](pics/LAYR_Logo.png)
 
-# The LAYR hardware kit
+# The LAYR 25/26 hardware kit
 
 ##  Description
 The LAYR hardware kit will be handed out to all teams. Each team gets one hardware kit.
