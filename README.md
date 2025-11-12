@@ -5,15 +5,18 @@ Mit der [__LAYR Open Chip Challenge__](https://github.com/OCDCpro/LAYR/tree/main
 
 ## The challenge
 
-
 __Link to__ [LAYR 25/26: The Challenge](https://github.com/OCDCpro/LAYR/tree/main/challenge)
 </p>
+
+![Challenge pic](Firefly_small.jpg)
 
 The LAYR challenge contains the tasks and informations to enter LAYR. Please start with reading the challenge.
 
 ## The hardware kit
 
 __Link to__ [LAYR 25/26: The hardware kit](https://github.com/OCDCpro/LAYR/tree/main/hardware_kit)
+
+![Hardware kit](HW_KIT_SMALL.jpg)
 
 Every team will get a LAYR 25/26 hardware kit. The kits will be distributed by the teams supervisors. The link takes you to the description of the hardware kit and some additional informations about the content and the components.
 

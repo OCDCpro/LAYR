@@ -3,7 +3,13 @@
 # The LAYR 25/26 hardware kit
 
 ##  Description
-The LAYR hardware kit will be handed out to all teams. Each team gets one hardware kit.
+The LAYR hardware kit will be handed out to the teams. Each team gets one hardware kit.
+![HW Kit pic](pics/HW_KIT.jpg)
+
+### Notes:
+- The complete box is a gift.
+- No return.
+- Do want you want with it.
 
 ## Content in the kit
 
@@ -21,11 +27,6 @@ The LAYR hardware kit will be handed out to all teams. Each team gets one hardwa
 * 1 x Doorlock 12V
 * 5 x LEDs and resistors
 * 2 x Pushbuttons 
-
-### Notes:
-- The complete box is a gift.
-- No return.
-- Do want you want with it.
 
 ## Content pictures and descriptions
 
