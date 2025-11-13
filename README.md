@@ -1,6 +1,6 @@
 ![LAYR Logo](pics/LAYR_Logo.png)
 
-Mit der [__LAYR Open Chip Challenge__](https://github.com/OCDCpro/LAYR/tree/main) schaffen wir eine Plattform, auf der Studierende selbst zum Innovationstreiber werden: Gesucht sind kreative Open-Source-Chipdesigns, die in mehreren Wettbewerbsetappen technisch wachsen, echte Sicherheitsaspekte adressieren und bis hin zum physischen Tape-out begleitet werden. Im Fokus steht nicht nur technisches Können, sondern die aktive Mitgestaltung an digitalen Wertschöpfungsketten und Souveränität – von der Idee bis zur funktionsfähigen Siliziumlösung.
+Mit der **LAYR Open Chip Challenge** schaffen wir eine Plattform, auf der Studierende selbst zum Innovationstreiber werden: Gesucht sind kreative Open-Source-Chipdesigns, die in mehreren Wettbewerbsetappen technisch wachsen, echte Sicherheitsaspekte adressieren und bis hin zum physischen Tape-out begleitet werden. Im Fokus steht nicht nur technisches Können, sondern die aktive Mitgestaltung an digitalen Wertschöpfungsketten und Souveränität – von der Idee bis zur funktionsfähigen Siliziumlösung.
 
 
 ## The challenge
