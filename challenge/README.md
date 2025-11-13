@@ -98,8 +98,8 @@ Same as OCDCpro Testchip.
 #### External components
 
 * Memory Chip for Key Storage:
-  * SPI Memory 
-  * AT25010  
+  * SPI EEPROM Memory 128x8 Bit, AT25010B  
+
 * NFC Reader:
   * [NXP NFRC522](https://www.nxp.com/docs/en/data-sheet/MFRC522.pdf)
 
