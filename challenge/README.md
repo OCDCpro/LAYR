@@ -1,5 +1,4 @@
-# <p style="text-align:right; margin:0;">
-  # <img src="https://github.com/user-attachments/assets/98f27bae-e238-4b50-bd76-c6b624b8f1aa" width="200"/>
+![LAYR Logo](pics/LAYR_Logo.png)
 
 # LAYR 25/26: The Challenge
 
@@ -125,8 +124,8 @@ In a scenario like this there are many possible attack vectors (e.g., side-chann
 
 **Security Levels:**
 
-* **Level 0:** Your chip includes no additional countermeasures, but you must ensure functional correctness of the simple OCDC Identification Protocol (see protocol specification below). Additionally, you should perform and document a basic form of threat modeling.
-* **Level 1:** Implementation of improved OCDC Authenticated Identification Protocol (see protocol specification below) instead of just reading out a static ID. You once again need to ensure functional correctness.
+* **Level 0:** Your chip includes no additional countermeasures, but you must ensure functional correctness of the simple LAYR Identification Protocol (see protocol specification below). Additionally, you should perform and document a basic form of threat modeling.
+* **Level 1:** Implementation of improved LAYR Authenticated Identification Protocol (see protocol specification below) instead of just reading out a static ID. You once again need to ensure functional correctness.
 * **Level 2** (intermediate): Protection against passive (power) side-channel attacks. You can freely chose what kinds of countermeasures (masking, hiding, ...) you want to implement to which degree. Please note that you should document your thoughts and argue why you chose which countermeasures and what the intended effect is.
 * **Level 3 (advanced):** Protection against active fault-injection attacks. Once again, you can freely choose which countermeasures (redundancy in time, redundancy in area, redundancy in information, ...) to implement, but you should document your choices.
 
@@ -137,7 +136,7 @@ In a scenario like this there are many possible attack vectors (e.g., side-chann
 
 In this section, we provide a short overview of the two protocol variants and the relevant smart card applet command codes. For more information on the concrete implementation, we refer to the README of the GitHub repository containing the JavaCard applet source code (see https://github.com/OCDCpro/javacard-applet/tree/master).
 
-#### OCDC Identification Protocol:
+#### LAYR Identification Protocol:
 
 Simply return the card identifier upon receiving a corresponding request without any authentication or encryption.
 
@@ -147,7 +146,7 @@ Command Summary:
 |-------------|------|------|------------------------------------------|
 | `GET_ID`    | 0x80 | 0x12 | Returns the unencrypted 16-byte card ID. |    
 
-#### OCDC Authenticated Identification Protocol:
+#### LAYR Authenticated Identification Protocol:
 
 Both parties have knowledge over a long-term shared AES-128 key.
 This key is used to perform mutual authentication and key agreement via a
@@ -171,7 +170,7 @@ As part of the competition, each team must verify that their 'Guardian' chip imp
 
 You must extend and enhance the provided testbench by implementing your own set of custom functional test cases. These tests should thoroughly verify the correctness of your hardware design and demonstrate that it behaves as expected under various operating conditions. Your custom test cases should focus on:
 
-* Correct handling of OCDC Identification and/or Authenticated Identification Protocol commands (e.g., GET_ID, AUTH);
+* Correct handling of LAYR Identification and/or Authenticated Identification Protocol commands (e.g., GET_ID, AUTH);
 * SPI communication with the keycard and external EEPROM;
 * Validation of both successful and failed authentication attempts;
 * Triggering the unlock signal only after proper authorization;
