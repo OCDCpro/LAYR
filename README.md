@@ -19,7 +19,7 @@ The LAYR challenge contains the tasks and informations to enter LAYR. Please sta
 
 ![Hardware kit](pics/HW_KIT_SMALL.jpg)
 
-Every team will get a LAYR 25/26 hardware kit. The kits will be distributed by the teams supervisors. The link takes you to the description of the hardware kit and some additional informations about the content and the components.
+All teams will get a LAYR 25/26 hardware kit. The kits will be distributed by the teams supervisors. The link takes you to the description of the hardware kit and some additional informations about the content and the components.
 
 **IMPORTANT:** The IDs and KEYS on the Javacards (NFC-cards) are pre-programmed by the LAYR team. A list of the cards, IDs and keys is provided with the descriptions.
 
