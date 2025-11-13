@@ -22,6 +22,11 @@ All teams will get a LAYR 25/26 hardware kit. The kits will be distributed by th
 
 **IMPORTANT:** The IDs and KEYS on the Javacards (NFC-cards) are pre-programmed by the LAYR team. A list of the cards, IDs and keys is provided with the descriptions.
 
+## The demonstrator
+![LAYR Demonstrator v1.0](pics/demonstrator_v1.0.jpg)
+
+**Link to** [LAYR 25/26: The demonstrator](https://github.com/OCDCpro/LAYR/tree/main/demonstrator)
+
 #### License
 
 Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
