@@ -1,3 +1,5 @@
+![LAYR Logo](pics/LAYR_Logo.png)
+
 # The LAYR 25/26 demonstrator
 
 ![LAYR Demonstrator v1.0](pics/demonstrator_v1.0.jpg)
@@ -9,7 +11,14 @@ The components of the LAYR hardware kit are used in the demonstrator to assemble
 
 ## FPGA prototyping
 
+#### Bitstream for ULX3S
+
+## PCB
+
+#### Kicad files
+
 ## Schematic V1.0
 
 ## Pictures V1.0
+
 
