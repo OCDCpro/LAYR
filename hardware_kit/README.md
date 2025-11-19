@@ -31,13 +31,20 @@ The LAYR hardware kit will be handed out to the teams. Each team gets one hardwa
 ## Content pictures and descriptions
 
 ### NFC Reader with RC522 Chip and SPI
-![RC522 NFC Reader](pics/NCF_RC522.jpg)
+| Photo | Symbol |
+| ----- | ------ |
+| ![RC522 NFC Reader](pics/NCF_RC522.jpg) | ![NFC RC522 symbol](pics/symbols/NFC_RC522.png)   |
+
 
 ### EEPROM Memory AT25010B on Pinheader board, SPI
-![EEPROM AT25010B](pics/EEPROM_AT25010B.jpg)
+| Photo | Symbol |
+| ----- | ------ |
+| ![EEPROM AT25010B](pics/EEPROM_AT25010B.jpg) | ![EEPROM Symbol](pics/symbols/EEPROM.png) |
 
 ### Keycard (Javacard), pre-programmed
-![Javacard](pics/NFC_CARD.jpg)
+| Photo | Symbol |
+| ----- | ------ |
+| ![Javacard](pics/NFC_CARD.jpg) | ![Javacard Symbol](pics/symbols/NFC_CARD.png)
 
 #### Pre-programmed data on the JavaCards
 All keycards have been programmed with a unique AES-128 key and 128-bit ID. You can find the data that
@@ -55,17 +62,30 @@ corresponds to your card in the table below. All values are in hex.
 | H          | `a157ef30050522bef1df789fafb94955` | `c88d1dd2085fb8b40efb83cf2f6c6c6f` |
 
 ### DC-DC Step-down Converter
-![Stepdown Converter](pics/STEP_DOWN_DC_DC.jpg)
+| Photo | Symbol |
+| ----- | ------ |
+| ![Stepdown Converter](pics/STEP_DOWN_DC_DC.jpg) | ![Stepdown DC-DC Symbol](pics/symbols/STEPDOWN.png) |
 
 ### Relais 12V
-![Relais 12V](pics/RELAIS.jpg)
+| Photo | Symbol |
+| ----- | ------ |
+| ![Relais 12V](pics/RELAIS.jpg) | ![Relais Symbol](pics/symbols/RELAIS.png) |
 
 ### USB-C Powersupply board with step-up converter
-![USB-C Powersupply board](pics/USBC_PWR.jpg)
+| Photo | Symbol |
+| ----- | ------ |
+| ![USB-C Powersupply board](pics/USBC_PWR.jpg) | ![USB-C module Symbol](pics/symbols/USB-C.png)
 
 ### Doorlock 12V
-![Doorlock 12V](pics/LOCK_12V.jpg)
+| Photo | Symbol |
+| ----- | ------ |
+| ![Doorlock 12V](pics/LOCK_12V.jpg) | ![Doorlock Symbol](pics/symbols/LOCK_12V.png)
 
 ### LEDs, Buttons and Resistors
-![LEDs](pics/LED_BUTTONS.jpg)
+| Photo | Symbol |
+| ----- | ------ |
+| ![LEDs](pics/LED_BUTTONS.jpg) | ![LED](pics/symbols/LED.png) |
+|   | ![Buttons](pics/symbols/BUTTON.png) |
+|   | ![Resitor](pics/symbols/RESISTOR.png) |
+
 
