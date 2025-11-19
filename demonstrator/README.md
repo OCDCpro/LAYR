@@ -10,6 +10,7 @@ The LAYR demonstrator is a hardware device. It brings the microchips to live and
 The components of the LAYR hardware kit are used in the demonstrator to assemble a doorlock.
 
 ## Schematic V1.0
+![High level schematic](schematic/schematic_symbols_v1.0.png)
 
 ## Pictures V1.0
 
