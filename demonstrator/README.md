@@ -9,6 +9,10 @@ The LAYR demonstrator is a hardware device. It brings the microchips to live and
 
 The components of the LAYR hardware kit are used in the demonstrator to assemble a doorlock.
 
+## Schematic V1.0
+
+## Pictures V1.0
+
 ## FPGA prototyping
 
 #### Bitstream for ULX3S
@@ -26,8 +30,6 @@ The components of the LAYR hardware kit are used in the demonstrator to assemble
 
 [Kicad files v1.0](https://github.com/OCDCpro/LAYR/tree/main/demonstrator/kicad/demostrator_pcb_v1.0)
 
-## Schematic V1.0
 
-## Pictures V1.0
 
 
