@@ -12,6 +12,12 @@ The components of the LAYR hardware kit are used in the demonstrator to assemble
 ## Schematic V1.0
 ![High level schematic](schematic/schematic_symbols_v1.0.png)
 
+#### The schematics
+[Link to Schematics as OpenOffice document](https://github.com/OCDCpro/LAYR/tree/main/demonstrator/schematic)
+
+#### The symbols
+[Link to all the single symbols from the hardware kit, as OpenOffice documents](https://github.com/OCDCpro/LAYR/tree/main/hardware_kit/pics/symbols)
+
 ## Pictures V1.0
 
 ## FPGA prototyping
