@@ -24,8 +24,8 @@ The components of the LAYR hardware kit are used in the demonstrator to assemble
 
 ## FPGA prototyping
 
-#### Bitstream for ULX3S
-There is a bitstream for the ULX3S FPGA board available. This implementations solves all task of the LAYR 25/26 challenge. The HDL sources of the bitstream are not published yet, as they would give away a full solution for the LAYR challenge.
+#### Bitstream for ULX3S 85F FPGA board
+There is a bitstream for the ULX3S 85F FPGA board available. This implementations solves all task of the LAYR 25/26 challenge. The HDL sources of the bitstream are not published yet, as they would give away a full solution for the LAYR challenge.
 
 #### Bitstream
 [Link to bitstream for ULX3S 85F FPGA](https://github.com/OCDCpro/LAYR/tree/main/demonstrator/bitstream_ulx3s)
