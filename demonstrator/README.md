@@ -78,8 +78,12 @@ IOBUF PORT  "uart_clk_in" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4;
 ![Demonstrator v1.0 PCB green 2](pics/demonstrator_v1.0_pcb_render_green_2.png)
 
 #### Kicad files
+The KiCad files should open with every KiCad version >=8. There are no special libs used for symbols or footprints. Just only the standard libs for KiCad.
 
-[Kicad files v1.0](https://github.com/OCDCpro/LAYR/tree/main/demonstrator/kicad/demostrator_pcb_v1.0)
+[Demonstrator v1.0 PCB Kicad files](https://github.com/OCDCpro/LAYR/tree/main/demonstrator/kicad/demostrator_pcb_v1.0)
+
+[Kicad standard libs](https://www.kicad.org/libraries/download/)
+
 
 
 
