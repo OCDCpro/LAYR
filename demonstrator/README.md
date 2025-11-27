@@ -30,6 +30,11 @@ There is a bitstream for the ULX3S FPGA board available. This implementations so
 #### Bitstream
 [Link to bitstream for ULX3S 85F FPGA](https://github.com/OCDCpro/LAYR/tree/main/demonstrator/bitstream_ulx3s)
 
+#### Flashing the bitstream
+The bitstream can be flashed to the ULX3S with the tool fujprog. For the usage, see the readme of fujprog here:
+
+[Link to fujprog](https://github.com/kost/fujprog)
+
 #### ULX3S pinout of the bitstream
 t.b.a.
 
