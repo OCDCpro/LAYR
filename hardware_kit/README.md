@@ -6,11 +6,6 @@
 The LAYR hardware kit will be handed out to the teams. Each team gets one hardware kit.
 ![HW Kit pic](pics/HW_KIT.jpg)
 
-### Notes:
-- The complete box is a gift.
-- No return.
-- Do want you want with it.
-
 ## Content in the kit
 
 ### Devices:
@@ -35,11 +30,16 @@ The LAYR hardware kit will be handed out to the teams. Each team gets one hardwa
 | ----- | ------ |
 | ![RC522 NFC Reader](pics/NCF_RC522.jpg) | ![NFC RC522 symbol](pics/symbols/NFC_RC522.png)   |
 
+#### Datasheet 
+[Link to NXP RC522 Datasheet PDF](https://www.nxp.com/docs/en/data-sheet/MFRC522.pdf)
 
 ### EEPROM Memory AT25010B on Pinheader board, SPI
 | Photo | Symbol |
 | ----- | ------ |
 | ![EEPROM AT25010B](pics/EEPROM_AT25010B.jpg) | ![EEPROM Symbol](pics/symbols/EEPROM.png) |
+
+#### Datasheet
+[Link to AT25010B Datasheet PDF](https://ww1.microchip.com/downloads/en/devicedoc/atmel-8707-seeprom-at25010b-020b-040b-datasheet.pdf)
 
 ### Keycard (Javacard), pre-programmed
 | Photo | Symbol |
@@ -60,6 +60,9 @@ corresponds to your card in the table below. All values are in hex.
 | F          | `3eb969973d3cce4717763ebf115ff496` | `191617ccffbfbe1c2cc0f48bd1f04fa5` |
 | G          | `2eb5df6306afab96cdd8cf88a158bf62` | `a91657d9d97f557bbdc062db6340cc90` |
 | H          | `a157ef30050522bef1df789fafb94955` | `c88d1dd2085fb8b40efb83cf2f6c6c6f` |
+
+#### Datasheet (Protocol)
+[Link to LAYR Javacard Protocol](https://github.com/OCDCpro/javacard-applet/tree/master)
 
 ### DC-DC Step-down Converter
 | Photo | Symbol |
