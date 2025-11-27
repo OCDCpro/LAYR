@@ -68,6 +68,9 @@ IOBUF PORT  "uart_rxd"    PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4;
 IOBUF PORT  "uart_clk_in" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4;
 ```
 
+#### 3V3 supply with the ULX3S
+The ULX3s has a built in voltage regulator for converting 5V input to 3V3. In the demonstrator with the ULX3S board, this built in regulator is used instead of the external step-down converter board. Check this in the Kicad schematics of the PCB.
+
 ## PCB
 ![Demonstrator v1.0 PCB editor](pics/demonstrator_v1.0_pcb_editor.png)
 
