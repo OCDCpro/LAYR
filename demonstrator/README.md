@@ -2,7 +2,7 @@
 
 # The LAYR 25/26 demonstrator
 
-![LAYR Demonstrator v1.0](pics/demonstrator_v1.0.jpg)
+![LAYR Demonstrator v0.5](pics/demonstrator_v0.5.jpg)
 
 ## Description
 The LAYR demonstrator is a hardware device. It brings the microchips to live and shows the functionality of the doorlock. Over the span of the LAYR 25/26 challenge the demonstrator goes through some development stages and various enhancements. 
@@ -20,9 +20,18 @@ The components of the LAYR hardware kit are used in the demonstrator to assemble
 
 ## Pictures V1.0
 
+![LAYR Demonstrator v1.0](pics/demonstrator_v1.0.jpg)
+
 ## FPGA prototyping
 
 #### Bitstream for ULX3S
+There is a bitstream for the ULX3S FPGA board available. This implementations solves all task of the LAYR 25/26 challenge. The HDL sources of the bitstream are not published yet, as they would give away a full solution for the LAYR challenge.
+
+#### Bitstream
+[Link to bitstream for ULX3S 85F FPGA](https://github.com/OCDCpro/LAYR/tree/main/demonstrator/bitstream_ulx3s)
+
+#### ULX3S pinout of the bitstream
+t.b.a.
 
 ## PCB
 ![Demonstrator v1.0 PCB editor](pics/demonstrator_v1.0_pcb_editor.png)
