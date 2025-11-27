@@ -36,7 +36,37 @@ The bitstream can be flashed to the ULX3S with the tool fujprog. For the usage, 
 [Link to fujprog](https://github.com/kost/fujprog)
 
 #### ULX3S pinout of the bitstream
-t.b.a.
+This is an extract from the constraints file for the bitstream. It contains not only the pinout, but also additional buffer information for each pin (internal PULL UP / DOWN).
+
+```
+LOCATE COMP "rst"    SITE "R1";  # FIRE1
+IOBUF  PORT "rst"    PULLMODE=DOWN IO_TYPE=LVCMOS33 DRIVE=4;
+
+LOCATE COMP "mode"        SITE "U18"; # J2_5+  GP14
+LOCATE COMP "busy"        SITE "N17"; # J2_7+  GP15
+LOCATE COMP "hard_fault"  SITE "N16"; # J2_9+  GP16
+LOCATE COMP "unlock"      SITE "L16"; # J2_11+ GP17
+LOCATE COMP "spi_sclk"    SITE "D18"; # J2_17+ GP20
+LOCATE COMP "spi_cs_1"    SITE "C18"; # J2_23+ GP21
+LOCATE COMP "spi_cs_0"    SITE "B15"; # J2_25+ GP22 D15->B15
+LOCATE COMP "spi_mosi"    SITE "B17"; # J2_27+ GP23
+LOCATE COMP "spi_miso"    SITE "C16"; # J2_29+ GP24
+LOCATE COMP "uart_txd"    SITE "D14"; # J2_31+ GP25 B15->D14
+LOCATE COMP "uart_rxd"    SITE "B13"; # J2_33+ GP26
+LOCATE COMP "uart_clk_in" SITE "D13"; # J2_35+ GP27
+IOBUF PORT  "mode"        PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4;
+IOBUF PORT  "busy"        PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4;
+IOBUF PORT  "hard_fault"  PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4;
+IOBUF PORT  "unlock"      PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4;
+IOBUF PORT  "spi_sclk"    PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4;
+IOBUF PORT  "spi_cs_1"    PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4;
+IOBUF PORT  "spi_cs_0"    PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4;
+IOBUF PORT  "spi_mosi"    PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4;
+IOBUF PORT  "spi_miso"    PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4;
+IOBUF PORT  "uart_txd"    PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4;
+IOBUF PORT  "uart_rxd"    PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4;
+IOBUF PORT  "uart_clk_in" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4;
+```
 
 ## PCB
 ![Demonstrator v1.0 PCB editor](pics/demonstrator_v1.0_pcb_editor.png)
