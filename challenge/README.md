@@ -101,7 +101,7 @@ Same as OCDCpro Testchip.
   * SPI EEPROM Memory 128x8 Bit, AT25010B  
 
 * NFC Reader:
-  * [NXP NFRC522](https://www.nxp.com/docs/en/data-sheet/MFRC522.pdf)
+  * [NXP MFRC522](https://www.nxp.com/docs/en/data-sheet/MFRC522.pdf)
 
 * Doorlock (electronic-mechanical, one output pin)
 * Status Indicators (3 x LEDs on output pins)
