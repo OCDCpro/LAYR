@@ -59,8 +59,9 @@ Microchip for the doorlock.
 
 **Padframe:**
 
-Same as OCDCpro Testchip.
-[OCDCpro Test chip](https://github.com/IHP-GmbH/TO_Sep2025/tree/main/ocdcpro_poc)
+The LAYR padframe for QFN24 can be found in this GitHub Repository:
+
+https://github.com/IHP-GmbH/OCDCPro-padframe
 
 #### Pins
 | Name  | Function | IO | Description |
