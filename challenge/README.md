@@ -85,11 +85,11 @@ https://github.com/IHP-GmbH/OCDCPro-padframe
 | Pin17 | spi_sclk  | Output | SPI Clock  |
 | Pin18 | Vss       | Input  | Vss |
 | Pin19 | Vdd       | Input  | Vdd |
-| Pin21 | status_unlock | Output  | Signaling a state or status 1 |
-| Pin22 | status_fault  | Output  | Signaling a state or status 2 |
-| Pin23 | status_busy   | Output  | Signaling a state or status 3 |
-| Pin24 | IO_Vss    | Input  | IO_Vss |
-| Pin25 | IO_Vdd    | Input  | IO_Vdd |
+| Pin20 | status_unlock | Output  | Signaling a state or status 1 |
+| Pin21 | status_fault  | Output  | Signaling a state or status 2 |
+| Pin22 | status_busy   | Output  | Signaling a state or status 3 |
+| Pin23 | IO_Vss    | Input  | IO_Vss |
+| Pin24 | IO_Vdd    | Input  | IO_Vdd |
 
 #### Clock / Reset
 
