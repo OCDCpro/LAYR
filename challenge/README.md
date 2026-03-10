@@ -163,7 +163,7 @@ Command Summary:
 |-------------|------|------|-------------|
 | `AUTH_INIT` | 0x80 | 0x10 | Card  generates random 8-byte challenge `rc`, computes `AES_psk(rc \|\| 00..00)` using the pre-shared key and returns the ciphertext.                                                               |
 | `AUTH`      | 0x80 | 0x11 | Terminal decrypts the ciphertext to recover `rc`, generates its own 8-byte challenge `rt`, and proves possesion of the key to the card by returning `AES_psk(rt \|\| rc)` using the pre-shared key. |
-| `GET_ID`    | 0x80 | 0x12 | Derive an ephemeral AES session key as `k_eph = AES_psk(rc \|\| rt)` and returns the 16-byte card ID encrypted using that key if authentication was successful. |
+| `GET_ID`    | 0x80 | 0x12 | Card and terminal derive an ephemeral AES session key as `k_eph = rc \|\| rt` and the card returns the 16-byte card ID encrypted using that key if authentication was successful. |
 
 ### 2.3. Functional Verification
 
