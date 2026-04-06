@@ -34,7 +34,7 @@ All teams will get a LAYR 25/26 hardware kit. The kits will be distributed by th
 
 ![Testchip GDS](pics/layr_testchip_gds_small.jpg)
 
-Six teams created submissions for LAYR 25/26. All of them got into production at IHP at the Tapeout in March 2026. 
+Six teams created submissions for LAYR 25/26. All of them got into production at IHP at the Tapeout in March 2026. SOme of these chip designs are available in public repositories. Find them with the Link above.
 
 #### License
 
