@@ -11,15 +11,6 @@ With the **LAYR Open Chip Challenge**, we are creating a platform on which stude
 
 The LAYR challenge contains the tasks and informations to enter LAYR. Please start with reading the challenge.
 
-## Teams submissions
-
-**Link to** [LAYR 25/26: List of submissions](https://github.com/OCDCpro/LAYR/tree/main/submissions)
-</p>
-
-![Testchip GDS](pics/layr_testchip_gds_small.jpg)
-
-Six teams created submissions for LAYR 25/26. All of them got into production at IHP at the Tapeout in March 2026. 
-
 ## The hardware kit
 
 **Link to** [LAYR 25/26: The hardware kit](https://github.com/OCDCpro/LAYR/tree/main/hardware_kit)
@@ -35,6 +26,15 @@ All teams will get a LAYR 25/26 hardware kit. The kits will be distributed by th
 ![LAYR Demonstrator v1.0](pics/demonstrator_v1.0.jpg)
 
 **Link to** [LAYR 25/26: The demonstrator](https://github.com/OCDCpro/LAYR/tree/main/demonstrator)
+
+## Teams submissions
+
+**Link to** [LAYR 25/26: List of submissions](https://github.com/OCDCpro/LAYR/tree/main/submissions)
+</p>
+
+![Testchip GDS](pics/layr_testchip_gds_small.jpg)
+
+Six teams created submissions for LAYR 25/26. All of them got into production at IHP at the Tapeout in March 2026. 
 
 #### License
 
