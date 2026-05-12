@@ -36,6 +36,14 @@ All teams will get a LAYR 25/26 hardware kit. The kits will be distributed by th
 
 Six teams created submissions for LAYR 25/26. All of them got into production at IHP at the Tapeout in March 2026. Some of these chip designs are available in public repositories. Find them with the Link above.
 
+## Events
+
+**Link to** [LAYR 25/26: Events](https://github.com/OCDCpro/LAYR/tree/main/events)
+</p>
+LAYR hosts a series of events. 
+A list of the past events with documents and materials regarding the events can be found at the link above.
+
+
 #### License
 
 Shield: [![CC BY 4.0][cc-by-shield]][cc-by]

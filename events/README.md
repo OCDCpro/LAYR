@@ -1,3 +1,5 @@
+![LAYR Logo](pics/LAYR_Logo.png)
+
 # The LAYR 25/26 Events
 
 ## 21.04.2026: LAYR Info Event Online
